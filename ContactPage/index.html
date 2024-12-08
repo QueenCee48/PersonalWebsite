@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Ciera</title>
+    <link href="contact.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  
+  <body>
+    <div class="cursor"></div>
+    
+    <div class="alert">
+      <img class="circle-exclamation" src="circle-exclamation-solid.png"/>
+      <span class="msg">Message sent successfully!</span>
+      <span class="close-btn">
+        <img class="xmark" src="xmark-solid.png"/>
+      </span>
+    </div>
+  
+    <header>
+      <h1>Contact Ciera</h1>
+      <nav>
+      	<ul>
+      	  <li><a class="nav-link" href="https://cbaucham.neocities.org/">Home</a></li>
+      	  <li><a class="nav-link" href="https://cbaucham.neocities.org/about">About</a></li>
+      	  <li><a class="nav-link" href="https://cbaucham.neocities.org/projects">Projects</a></li>
+      	  <li><a class="nav-link" href="https://cbaucham.neocities.org/artblog">Art Blog</a></li>
+      	  <li><a class="nav-link" href="https://cbaucham.neocities.org/games">Games</a></li>
+      	  <li><a class="nav-link" href="https://queencee48.github.io/">Contact</a></li>
+      	</ul>
+      </nav>
+    </header>
+    
+    <hr/>
+  
+    <main>
+      <div class="content">
+      
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/mnnqzkoz" method="POST">
+          
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <button type="submit">Send Message <img src="arrow_icon.png" /></button>
+          </div>
+        </form>
+        
+      </div>
+    </main>
+    
+    <hr/>
+    
+    <footer id="contact-section">
+    
+      <div id="contact-link-wrapper">
+        <a target="_blank" href="https://www.codedex.io/@QueenCee48" >
+            <img id="codedex" alt="Codédex Icon" src="codedex.png" />
+        </a>
+        <a target="_blank" href="https://github.com/QueenCee48" >
+            <img id="github" alt="GitHub Icon" src="github.png" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/the_artcee_one/" >
+            <img id="instagram" alt="Instagram Icon" src="instagram.png" />
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/cbaucham/" >
+            <img id="linkedin" alt="LinkedIn Icon" src="linkedin.png" />
+        </a>
+      </div>
+      
+    </footer>
+    
+    <script src="contact.js"></script>
+  </body>
+</html>
